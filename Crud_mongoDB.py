@@ -5,7 +5,7 @@ import datetime
 from typing import Optional, Union, List
 
 class MongoCRUD:
-    def __init__(self, uri="mongodb+srv://ADMIN:3qzsEIuzIgr5geLx@trabalhobd.d4xr3fy.mongodb.net/?retryWrites=true&w=majority&appName=TrabalhoBD", db_name="Banco"):
+    def __init__(self, uri="", db_name="Banco"):
         self.client = MongoClient(uri)
         self.db = self.client[db_name]
         # Collections
